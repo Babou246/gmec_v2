@@ -1,0 +1,8 @@
+env/
+files_rejet/
+uploads/
+backup.*
+United-*
+migrations/
+__pycache__/
+flask_session/
