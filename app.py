@@ -548,6 +548,7 @@ def modifier_defaut(defaut_id):
 
         print(">>>>>>>>>>", confirm)
         if confirm:
+            defaut.confirm=confirm
             db.session.commit()
         elif request.form.get('description_defaut') or request.form.get('date_fin') or request.form.get('type_defaut') or request.form.get('commentaires') or request.form.get('validation') or request.form.get('evaluer') or request.form.get('n1'):
             defaut.description_defaut = request.form.get('description_defaut')
